@@ -1,0 +1,142 @@
+.galleryItem {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.gallery {
+  max-width: 1250px;
+  margin: 2.5rem auto 47px auto;
+  margin-top: 1.5rem;
+  padding-bottom: 47px;
+}
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  transition: transform 2s ease-in-out;
+  object-fit: cover;
+  
+  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery {
+    display: block;
+    margin: 2.5rem auto 47px auto;
+    height: 1390px;
+    width: 1250px;
+    position: relative;
+  }
+
+  .galleryItem {
+    position: absolute;
+    width: 310px;
+  }
+
+  .galleryItem:nth-child(1) {
+    height: 250px;
+    left: 0;
+    top: 0;
+  }
+
+  .galleryItem:nth-child(2) {
+    height: 400px;
+    left: 330px;
+    top: 0;
+  }
+
+  .galleryItem:nth-child(3) {
+    height: 285px;
+    left: 660px;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .galleryItem:nth-child(4) {
+    height: 250px;
+    left: 990px;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .galleryItem:nth-child(5) {
+    height: 340px;
+    left: 0;
+    top: 290px;
+  }
+
+  .galleryItem:nth-child(6) {
+    height: 280px;
+    left: 330px;
+    top: 440px;
+  }
+
+  .galleryItem:nth-child(7) {
+    height: 500px;
+    left: 660px;
+    top: 325px;
+  }
+
+  .galleryItem:nth-child(8) {
+    height: 250px;
+    left: 990px;
+    top: 290px;
+  }
+
+  .galleryItem:nth-child(9) {
+    height: 420px;
+    left: 0;
+    top: 670px;
+  }
+
+  .galleryItem:nth-child(10) {
+    height: 260px;
+    left: 330px;
+    top: 760px;
+  }
+
+  .galleryItem:nth-child(11) {
+    height: 430px;
+    left: 990px;
+    top: 580px;
+  }
+
+  .galleryItem:nth-child(12) {
+    height: 260px;
+    left: 0;
+    bottom: 0;
+  }
+
+  .galleryItem:nth-child(13) {
+    height: 330px;
+    left: 330px;
+    bottom: 0;
+  }
+
+  .galleryItem:nth-child(14) {
+    height: 525px;
+    left: 660px;
+    bottom: 0;
+  }
+
+  .galleryItem:nth-child(15) {
+    height: 340px;
+    left: 990px;
+    bottom: 0;
+  }
+}

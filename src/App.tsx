@@ -1,9 +1,14 @@
+import { Route, Routes } from "react-router-dom"
 import "./App.css"
-import Main_page from "./components/Main_page"
+import Main_page from "./components/Gallery/GalleryGrid"
+import ViewArt from "./components/Art/ViewArt"
 const App = () => {
   return (
     <>
-      <Main_page />
+    <Routes>
+      <Route path="/" element={<Main_page />}/>
+      <Route path= "/art" element={<ViewArt />} />
+      </Routes>
     </>
   )
 }
