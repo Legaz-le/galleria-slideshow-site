@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import data from "../../../starter-code/data.json";
 import "./GalleryCss.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const Main_page = () => {
   const galleryRef = useRef<HTMLDivElement>(null)
@@ -19,7 +20,8 @@ const Main_page = () => {
   }, []);
   return (
     <>
-      <div className="min-h-screen gallery relative " ref={galleryRef}>
+    <Navbar />
+      <div className="min-h-screen gallery  relative px-5" ref={galleryRef}>
       {data.map((member) => (
         <Link
           to={`/art/${encodeURIComponent(member.name)}`}
@@ -32,8 +34,8 @@ const Main_page = () => {
               alt={`${member.name} image`}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0  bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md flex flex-col justify-end p-4">
-              <p className="text-white text-lg font-semibold">{member.name}</p>
+            <div className="overlay ">
+              <p className="text-white text-[20px] font-semibold">{member.name}</p>
               <p className="text-white text-sm italic">{member.artist.name}</p>
             </div>
           </div>

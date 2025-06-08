@@ -6,8 +6,8 @@ const App = () => {
   return (
     <>
     <Routes>
+      <Route path="/art" element={<ViewArt />}/>
       <Route path="/" element={<Main_page />}/>
-      <Route path= "/art" element={<ViewArt />} />
       </Routes>
     </>
   )
