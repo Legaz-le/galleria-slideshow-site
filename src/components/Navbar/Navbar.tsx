@@ -5,12 +5,14 @@ const Navbar = () => {
     <>
       <nav className="w-full bg-white py-6">
         <div className="max-w-[1340px] mx-auto px-4 flex justify-between items-center">
-          <Link to="/art">
+          <Link to="/">
             <img src="/assets/shared/logo.svg" alt="logo" className="h-12" />
           </Link>
+          <Link to="/art">
           <button className="text-sm md:text-base text-gray-400 hover:text-black hover:underline uppercase tracking-wide transition">
             Start slideshow
           </button>
+          </Link>
         </div>
       </nav>
       {/* thin divider */}

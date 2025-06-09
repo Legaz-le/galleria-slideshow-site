@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <Routes>
-      <Route path="/art" element={<ViewArt />}/>
+      <Route path="/art/:name" element={<ViewArt />}/>
       <Route path="/" element={<Main_page />}/>
       </Routes>
     </>
